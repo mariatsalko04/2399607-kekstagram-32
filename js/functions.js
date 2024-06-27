@@ -13,11 +13,22 @@ checkLenght('проверяемая строка', 10); // false
 
 // Функция для проверки, является ли строка палиндромом
 
+
 function isPalindrome(str) {
-  const anotherStr = str.replaceALL(' ' ,'').toUpperCase;
-  let newStr = '';
-  for (let i = rStr.lenght; i >= 0; i--) {
-    newStr += rStr[i];
+  const anotherLine = str.replaceALL(' ' ,'').toUpperCase;
+  let newLine = '';
+  for (let i = anotherLine.lenght; i >= 0; i--) {
+    newLine += anotherLine[i];
+  }
+  return newLine === anotherLine;
 }
-  return newStr === rStr;
-}
+
+// Строка является палиндромом
+isPalindrome('топот'); // true
+// Несмотря на разный регистр, тоже палиндром
+isPalindrome('ДовОд'); // true
+// Это не палиндром
+isPalindrome('Кекс'); // false
+
+// Это палиндром
+isPalindrome('Лёша на полке клопа нашёл '); // true
