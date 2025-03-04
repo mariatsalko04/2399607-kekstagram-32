@@ -1,23 +1,24 @@
 // Функция для проверки длины строки
 
-function checkLenght(str, lenght) {
-  return str <= lenght;
+function checkLength(line, maxlength) {
+  return line <= maxlength;
 }
 
 // Строка короче 20 символов
-checkLenght('проверяемая строка', 20); // true
+checkLength('проверяемая строка', 20); // true
 // Длина строки ровно 18 символов
-checkLenght('проверяемая строка', 18); // true
+checkLength('проверяемая строка', 18); // true
 // Строка длиннее 10 символов
-checkLenght('проверяемая строка', 10); // false
+checkLength('проверяемая строка', 10); // false
+
 
 // Функция для проверки, является ли строка палиндромом
 
 
-function isPalindrome(str) {
-  const anotherLine = str.replaceALL(' ' ,'').toUpperCase;
+function isPalindrome(line) {
+  const anotherLine = line.replaceALL(' ' ,'').toUpperCase;
   let newLine = '';
-  for (let i = anotherLine.lenght; i >= 0; i--) {
+  for (let i = anotherLine.length; i >= 0; i--) {
     newLine += anotherLine[i];
   }
   return newLine === anotherLine;
