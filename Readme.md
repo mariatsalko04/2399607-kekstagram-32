@@ -1,6 +1,6 @@
 # Личный проект «Кекстаграм»
 
-* Студент: [Мария Цалко](https://up.htmlacademy.ru/javascript/32/user/2399607).
+* Студент: [Мария Цалко](https://up.htmlacademy.ru/javascript/32/user/2399607).Удаляет имя наставника
 
 
 ---
